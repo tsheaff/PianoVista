@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,11 @@
 		4D70A2BF245F943C0046F46B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70A2BE245F943C0046F46B /* ViewController.swift */; };
 		4D70A2C1245F943E0046F46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D70A2C0245F943E0046F46B /* Assets.xcassets */; };
 		4D70A2C4245F943E0046F46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70A2C2245F943E0046F46B /* Main.storyboard */; };
-		8ED822B95BEF6D76D6AAD15C /* Pods_PianoVista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B6810A7FB3FDE28E0946CA /* Pods_PianoVista.framework */; };
+		9575E494EC8661320931C748 /* Pods_PianoVista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589D8C8C606EC912E2606E6D /* Pods_PianoVista.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		165B10A22D343C94F5059539 /* Pods-PianoVista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoVista.release.xcconfig"; path = "Target Support Files/Pods-PianoVista/Pods-PianoVista.release.xcconfig"; sourceTree = "<group>"; };
-		293E2FD03BD90D57BB5A19A6 /* Pods-PianoVista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoVista.debug.xcconfig"; path = "Target Support Files/Pods-PianoVista/Pods-PianoVista.debug.xcconfig"; sourceTree = "<group>"; };
+		20873631F53D028F436BE6CD /* Pods-PianoVista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoVista.debug.xcconfig"; path = "Target Support Files/Pods-PianoVista/Pods-PianoVista.debug.xcconfig"; sourceTree = "<group>"; };
 		4D70A2B9245F943C0046F46B /* PianoVista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoVista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70A2BC245F943C0046F46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D70A2BE245F943C0046F46B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +23,8 @@
 		4D70A2C3245F943E0046F46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D70A2C5245F943E0046F46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D70A2C6245F943E0046F46B /* PianoVista.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PianoVista.entitlements; sourceTree = "<group>"; };
-		B5B6810A7FB3FDE28E0946CA /* Pods_PianoVista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoVista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		589D8C8C606EC912E2606E6D /* Pods_PianoVista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoVista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF553FE7874D56ECBD02903F /* Pods-PianoVista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoVista.release.xcconfig"; path = "Target Support Files/Pods-PianoVista/Pods-PianoVista.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,20 +32,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8ED822B95BEF6D76D6AAD15C /* Pods_PianoVista.framework in Frameworks */,
+				9575E494EC8661320931C748 /* Pods_PianoVista.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11B8DCB63649EB382206635A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				589D8C8C606EC912E2606E6D /* Pods_PianoVista.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B30A299681201CA2D44A93E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20873631F53D028F436BE6CD /* Pods-PianoVista.debug.xcconfig */,
+				CF553FE7874D56ECBD02903F /* Pods-PianoVista.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4D70A2B0245F943C0046F46B = {
 			isa = PBXGroup;
 			children = (
 				4D70A2BB245F943C0046F46B /* PianoVista */,
 				4D70A2BA245F943C0046F46B /* Products */,
-				7DB96A8B9A21BED0EEE2EBC1 /* Pods */,
-				A8DD31065FFBEDAA06CF3B70 /* Frameworks */,
+				2B30A299681201CA2D44A93E /* Pods */,
+				11B8DCB63649EB382206635A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,24 +87,6 @@
 			path = PianoVista;
 			sourceTree = "<group>";
 		};
-		7DB96A8B9A21BED0EEE2EBC1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				293E2FD03BD90D57BB5A19A6 /* Pods-PianoVista.debug.xcconfig */,
-				165B10A22D343C94F5059539 /* Pods-PianoVista.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		A8DD31065FFBEDAA06CF3B70 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B5B6810A7FB3FDE28E0946CA /* Pods_PianoVista.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,11 +94,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D70A2C9245F943E0046F46B /* Build configuration list for PBXNativeTarget "PianoVista" */;
 			buildPhases = (
-				29681955D3F1D678A3D93094 /* [CP] Check Pods Manifest.lock */,
+				808E39FD393F2DB230FFB05A /* [CP] Check Pods Manifest.lock */,
 				4D70A2B5245F943C0046F46B /* Sources */,
 				4D70A2B6245F943C0046F46B /* Frameworks */,
 				4D70A2B7245F943C0046F46B /* Resources */,
-				8B1CB7A2F1A505C0B1B6147F /* [CP] Embed Pods Frameworks */,
+				CA09492118A638910D0E9150 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,7 +155,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29681955D3F1D678A3D93094 /* [CP] Check Pods Manifest.lock */ = {
+		808E39FD393F2DB230FFB05A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,7 +177,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8B1CB7A2F1A505C0B1B6147F /* [CP] Embed Pods Frameworks */ = {
+		CA09492118A638910D0E9150 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -336,7 +335,7 @@
 		};
 		4D70A2CA245F943E0046F46B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 293E2FD03BD90D57BB5A19A6 /* Pods-PianoVista.debug.xcconfig */;
+			baseConfigurationReference = 20873631F53D028F436BE6CD /* Pods-PianoVista.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PianoVista/PianoVista.entitlements;
@@ -357,7 +356,7 @@
 		};
 		4D70A2CB245F943E0046F46B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 165B10A22D343C94F5059539 /* Pods-PianoVista.release.xcconfig */;
+			baseConfigurationReference = CF553FE7874D56ECBD02903F /* Pods-PianoVista.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PianoVista/PianoVista.entitlements;
