@@ -1,0 +1,16 @@
+PianoVista.xcodeproj/xcuserdata/
+PianoVista.xcworkspace/xcuserdata/
+xcuserdata
+
+.DS_Store
+DerivedData/
+
+# if you're using Xcode's custom executables, comment out the line "*.pbxuser"
+*.pbxuser
+
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+.env
