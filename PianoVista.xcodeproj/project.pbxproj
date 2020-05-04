@@ -11,9 +11,11 @@
 		4D70A2BF245F943C0046F46B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D70A2BE245F943C0046F46B /* ViewController.swift */; };
 		4D70A2C1245F943E0046F46B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D70A2C0245F943E0046F46B /* Assets.xcassets */; };
 		4D70A2C4245F943E0046F46B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D70A2C2245F943E0046F46B /* Main.storyboard */; };
+		F9CD95FB09787B790CF0A539 /* Pods_PianoVista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7C47543FDE5E9C542B2D8C /* Pods_PianoVista.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E56F545729A39F2F58A8A18 /* Pods-PianoVista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoVista.debug.xcconfig"; path = "Target Support Files/Pods-PianoVista/Pods-PianoVista.debug.xcconfig"; sourceTree = "<group>"; };
 		4D70A2B9245F943C0046F46B /* PianoVista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PianoVista.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D70A2BC245F943C0046F46B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D70A2BE245F943C0046F46B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +23,8 @@
 		4D70A2C3245F943E0046F46B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D70A2C5245F943E0046F46B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4D70A2C6245F943E0046F46B /* PianoVista.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PianoVista.entitlements; sourceTree = "<group>"; };
+		7D94B3D463F495CC5089276A /* Pods-PianoVista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PianoVista.release.xcconfig"; path = "Target Support Files/Pods-PianoVista/Pods-PianoVista.release.xcconfig"; sourceTree = "<group>"; };
+		BE7C47543FDE5E9C542B2D8C /* Pods_PianoVista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoVista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +32,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9CD95FB09787B790CF0A539 /* Pods_PianoVista.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09F201695D2734708D5E1E49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E56F545729A39F2F58A8A18 /* Pods-PianoVista.debug.xcconfig */,
+				7D94B3D463F495CC5089276A /* Pods-PianoVista.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2C739417B6D2F2ED1A37E4ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE7C47543FDE5E9C542B2D8C /* Pods_PianoVista.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D70A2B0245F943C0046F46B = {
 			isa = PBXGroup;
 			children = (
 				4D70A2BB245F943C0046F46B /* PianoVista */,
 				4D70A2BA245F943C0046F46B /* Products */,
+				09F201695D2734708D5E1E49 /* Pods */,
+				2C739417B6D2F2ED1A37E4ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D70A2C9245F943E0046F46B /* Build configuration list for PBXNativeTarget "PianoVista" */;
 			buildPhases = (
+				31A9162BEF4995068499D776 /* [CP] Check Pods Manifest.lock */,
 				4D70A2B5245F943C0046F46B /* Sources */,
 				4D70A2B6245F943C0046F46B /* Frameworks */,
 				4D70A2B7245F943C0046F46B /* Resources */,
+				205B5894E73E37BE45EE588C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		205B5894E73E37BE45EE588C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PianoVista/Pods-PianoVista-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PianoVista/Pods-PianoVista-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PianoVista/Pods-PianoVista-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		31A9162BEF4995068499D776 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PianoVista-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D70A2B5245F943C0046F46B /* Sources */ = {
@@ -267,6 +336,7 @@
 		};
 		4D70A2CA245F943E0046F46B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E56F545729A39F2F58A8A18 /* Pods-PianoVista.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PianoVista/PianoVista.entitlements;
@@ -287,6 +357,7 @@
 		};
 		4D70A2CB245F943E0046F46B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D94B3D463F495CC5089276A /* Pods-PianoVista.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = PianoVista/PianoVista.entitlements;
