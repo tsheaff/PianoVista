@@ -1,4 +1,4 @@
-platform :macos, '11.0'
+platform :osx, '11.0'
 
 target 'PianoVista' do
   use_frameworks!
